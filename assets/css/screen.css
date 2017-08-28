@@ -224,12 +224,12 @@ article>img {
     max-width: 740px;
     display: block;
 }
-article>img[src$='#big'] {
+article>p>img[src$='#big'] {
     display: block;
     max-width: 100%;
     margin: 40px auto;
 }
-article>img[src$='#med'] {
+article>p>img[src$='#med'] {
     margin: 20px auto;
     max-width: 960px;
     width: 100%;
