@@ -61,6 +61,7 @@ div.heading-wrapper {
     font-size: 1em;
     color: #fff;
     font-family: "Source Code Pro", monospace;
+    font-weight: 300;
     line-height: 50px;
     margin: 0;
     flex-grow: 2;
