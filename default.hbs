@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{meta_title}}</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{asset "css/kube.min.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/screen.css"}}" />
+    <link rel="stylesheet" href="{{asset "css/fonts.css"}}" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,500|Source+Serif+Pro:400,700|Source+Code+Pro:300|Teko" rel="stylesheet">
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div class="container">
+        <div class="heading">
+            <progress id="progressbar" value="0" max="100"></progress>
+            <div class="heading-wrapper">
+                <h1 class="site-title"><a href="/">johnathan lyman</a></h1>
+                {{navigation}}
+            </div>
+        </div>
+        <div class="list-content">
+            {{{body}}}                
+        </div>
+        <div class="footer">
+            <p>&copy; 2014-{{date format="YYYY"}} | 
+                Johnathan Lyman | 
+                All rights reserved. | 
+                Powered by Axioms of Internet Juice.
+        </div>
+    </div>
+    {{!-- Ghost outputs important scripts and data with this tag --}}
+    {{ghost_foot}}
+    {{!-- Fitvids makes video embeds responsive and awesome --}}
+    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="{{asset "/js/kube.min.js"}}"></script>
+    <script src="{{asset "/js/site.js"}}"></script>
+</body>
+</html>
