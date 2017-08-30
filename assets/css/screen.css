@@ -45,7 +45,8 @@ div.heading-wrapper {
     margin-top: 100px;
 }
 .list-content>article {
-    min-height: 100px;
+    min-height: 50px;
+    margin-bottom: 20px;
 }
 .footer {
     font-size: 0.85em;
@@ -96,11 +97,11 @@ div.heading-wrapper {
 }
 .list-post-title {
     display: block;
-    max-width: 960px;
+    max-width: 740px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Fira Sans", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 header>div.header-image {
     max-width: 960px;
@@ -184,7 +185,6 @@ article.list-post {
     padding-bottom: 0px;
 }
 article.post>p, article.post>div {
-    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     font-family: "Charter", serif;
@@ -214,29 +214,34 @@ article.list-post>p {
 article.post>div>p.drop::first-letter, 
 article.post>div>p:first-of-type:first-letter,
 article.post>div>hr + p:first-letter {
-    font-size: 4em;
+    font-size: 68px;
     font-weight: 600;
     float: left;
     margin: 14px 6px;
-    line-height: 36px
+    line-height: 31px
 }
 article>img {
     margin: 20px auto;
     max-width: 740px;
     display: block;
 }
-article>div>p>img[src$='#big'] {
-    display: block;
-    max-width: 100%;
-    margin: 40px auto;
+article>div>p.med {
+    max-width: 960px;
 }
-article>div>p>img[src$='#med'] {
+article>div>p.large {
+    max-width: 100%;
+}
+article>div>p.med>img {
     margin: 20px auto;
     max-width: 960px;
-    width: 100%;
     display: block;
 }
-article>div>p>code {
+article>div>p.large>img {
+    margin: 20px auto;
+    max-width: 100%;
+    display: block;
+}
+article>div>p>code, .footnote-item>p>code {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 0.8rem;
