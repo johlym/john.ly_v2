@@ -3,22 +3,11 @@
 {{#post}}
 <article class="post {{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        {{#if feature_image}}
-        <div class="header-image">
-            <img src="{{img_url feature_image}}" /> 
-        </div>
-        <div class="title-overlay"><title class="post-title h1" itemprop="headline">{{title}}</title></div>
-        <p>
-            <time class="time" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
-            {{date format="MMMM DD, YYYY"}}</time>
-        </p>
-        {{else}}
         <div class="title-non-overlay"><title class="post-title h1" itemprop="headline">{{title}}</title></div>
         <p class="non-overlay"> 
             <time class="time" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
             {{date format="MMMM DD, YYYY"}}</time>
         </p>
-        {{/if}}
     </header>
     {{content}}
 </article>

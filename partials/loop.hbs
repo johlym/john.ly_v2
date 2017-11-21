@@ -1,12 +1,13 @@
 {{#foreach posts}}
-<article class="list-post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="list-header">
-        <a href="{{url}}"><title class="list-post-title h3" itemprop="headline">{{title}}</title></a>
-        <p class="list">
-            <time class="list-time" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
+<article class="post {{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <div class="title-non-overlay"><a href="{{url}}"><title class="post-title h1" itemprop="headline">{{title}}</title></a></div>
+        <p class="non-overlay"> 
+            <time class="time" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
             {{date format="MMMM DD, YYYY"}}</time>
         </p>
     </header>
+    {{content}}
 </article>
 {{/foreach}}
 
