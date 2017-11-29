@@ -1,14 +1,16 @@
 {{!< default}}
 
 {{#post}}
-<article class="post {{post_class}}" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post {{post_class}} h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-        <div class="title-non-overlay"><title class="post-title h1" itemprop="headline">{{title}}</title></div>
+        <div class="title-non-overlay"><title class="post-title h1 p-name" itemprop="headline">{{title}}</title></div>
         <p class="non-overlay"> 
-            <time class="time" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
-            {{date format="MMMM DD, YYYY"}}</time>
+            <time class="time dt-published" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD h:mm:ss"}}">
+            {{date format="MMMM Do, YYYY, h:mm:ss a"}}</time> | <a class="p-author h-card" href="https://john.ly">Johnathan Lyman</a> | <a href="{{url}}" class="u-url">Permalink <i class="far fa-external-link"></i></a>
         </p>
     </header>
-    {{content}}
+    <div class="e-content">
+        {{content}}
+    </div>
 </article>
 {{/post}}

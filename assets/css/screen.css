@@ -188,7 +188,7 @@ article.post {
 article.list-post {
     padding-bottom: 0px;
 }
-article.post>p, article.post>div {
+article.post>p, article>div.e-content>div {
     margin-left: auto;
     margin-right: auto;
     font-family: "Charter", serif;
@@ -196,7 +196,7 @@ article.post>p, article.post>div {
     line-height: 1.8em;
 }
 
-article.post>p, article.post>div>p, article.post>div>ol, article.post>div>ul {
+article.post>p, article>div.e-content>div>p, article>div.e-content>div>ol, article>div.e-content>div>ul {
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;
@@ -204,7 +204,7 @@ article.post>p, article.post>div>p, article.post>div>ol, article.post>div>ul {
     font-size: 18px;
     line-height: 1.8em;
 }
-article.post>div>ol>li, article.post>div>ul>li {
+article>div.e-content>div>ol>li, article>div.e-content>div>ul>li {
     margin-left: 26px;
 }
 article.list-post>p {
@@ -215,9 +215,9 @@ article.list-post>p {
     font-size: 18px;
     line-height: 1.8em;
 }
-article.post>div>p.drop::first-letter, 
-article.post>div>p:first-of-type:first-letter,
-article.post>div>hr + p:first-letter {
+article>div.e-content>div>p.drop::first-letter, 
+article>div.e-content>div>p:first-of-type:first-letter,
+article>div.e-content>div>hr + p:first-letter {
     font-size: 68px;
     font-weight: 600;
     float: left;
@@ -229,39 +229,39 @@ article>img {
     max-width: 740px;
     display: block;
 }
-article>div>p.med {
+article>div>div>p.med {
     max-width: 740px;
 }
-article>div>p.large {
+article>div>div>p.large {
     max-width: 100%;
 }
-article>div>p.med>img {
+article>div>div>p.med>img {
     margin: 20px auto;
     max-width: 740px;
     display: block;
 }
-article>div>p.large>img {
+article>div>div>p.large>img {
     margin: 20px auto;
     max-width: 100%;
     display: block;
 }
-article>div>p>code, .footnote-item>p>code {
+article>div>div>p>code, .footnote-item>p>code {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 0.8rem;
     background-color: #f5f5f5;
 }
-article>div>pre {
+article>div>div>pre {
     max-width: 740px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #ddd;
     border-radius: 4px;
 }
-article>div>pre>code {
+article>div>div>pre>code {
     font-size: 0.8rem;
 }
-article>div>video {
+article>div>div>video {
     margin-left: auto;
     margin-right: auto;
     display:block;
@@ -278,14 +278,14 @@ article>span.caption {
     color: #777;
     font-size: 0.8em;
 }
-article>div>hr {
+article>div>div>hr {
     display: block;
     margin: 30px auto;
     max-width: 40px;
     color: #333;
     border: 3px solid #333;
 }
-article>div>.pull {
+article>div>div>.pull {
     display: block;
     margin: 30px auto;
     max-width: 740px;
@@ -405,7 +405,7 @@ progress::-webkit-progress-value {
 }
 
 @media (max-width: 740px) {
-    .footnotes, article.post>div>ol, article.post>div>ul, p, blockquote, .pull, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, .page-turn {
+    .footnotes, article>div.e-content>div>ol, article>div.e-content>div>ul, p, blockquote, .pull, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, .page-turn {
         padding-left: 20px;
         padding-right: 20px;
     }
