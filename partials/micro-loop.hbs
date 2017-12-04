@@ -1,0 +1,18 @@
+{{#foreach posts}}
+{{#has tag="micro"}}
+<article class="post {{post_class}} h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+        <p class="non-overlay"> 
+            <time class="time dt-published" itemprop="datePublished" datetime="{{date format="YYYY-MM-DD h:mm:ss"}}">
+            {{date format="MMMM Do, YYYY, h:mm:ss a"}}</time> | <a class="p-author h-card" href="https://john.ly">Johnathan Lyman</a> | <a href="{{url}}" class="u-url">Permalink <i class="far fa-external-link"></i></a>
+        </p>
+    </header>
+    <div class="e-content">
+        {{content}}
+    </div>
+    
+</article>
+{{/has}}
+{{/foreach}}
+
+{{pagination}}
