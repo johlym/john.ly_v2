@@ -1,12 +1,12 @@
 {
     "name": "john-ly-version-2",
     "description": "A ghost theme for john.ly",
-    "version": "0.8.75",
-    "homepage": "https://john.ly",
+    "version": "0.9.75",
+    "homepage": "https://johnathan.org",
     "author": {
         "name": "Johnathan Lyman",
         "email": "jelyman@gmail.com",
-        "url": "https://john.ly"
+        "url": "https://johnathan.org"
     },
     "config": {
         "posts_per_page": 5
